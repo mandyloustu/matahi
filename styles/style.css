@@ -29,8 +29,8 @@ body {
 /* Styling the logo in the header */
 .header img {
 	float: left;
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 140px;
 	background: #20392e;
 }
 
@@ -39,7 +39,7 @@ body {
 	position: relative;
 	top: 20px;
 	bottom: 20px;
-	font-size: 250%;
+	font-size: 195%;
 	text-align: right;
 }
 
