@@ -45,7 +45,7 @@ body {
 
 /* Styling the navigation bar */
 .navbar {
-	background-color: #A64E0E;
+	background-color: #48341C;
 	overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ body {
 /* Altering the colour of the links when hovering */
 .navbar a:hover {
 	background-color: #f5ebd8;
-	color: #A64E0E;
+	color: #48341C;
 }
 
 /* Highlighting the active page */
@@ -232,7 +232,7 @@ hr {
 
 /* Styling the social media footer */
 .socialfooter {
-	background-color: #A64E0E;
+	background-color: #48341C;
 	overflow: hidden;
 }
 
@@ -244,7 +244,7 @@ hr {
 	float: left;
 	width: 50px;
 	height: 50px;
-	background: #A64E0E;
+	background: #48341C;
 }
 
 /* Responsive menu for smaller screens */
