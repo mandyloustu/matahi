@@ -17,9 +17,13 @@
 
 <body>
 	
-	<header class="header">
-		<a href="./index.html"><img src="./images/haukailogo.png" alt="The Haukai Logo"></a>
-		<h1>MENU</h1>
+	<header class="flexheader">
+		<div class="headerleft">
+			<a href="./index.html"><img src="./images/haukailogo.png" alt="The Haukai Logo"></a>
+		</div>
+		<div class="headerright">
+			<h1>MENU</h1>
+		</div>
 	</header>
 
 	<nav class="navbar"> 
@@ -31,12 +35,14 @@
 
 	<main>
 
-	<!-- The appetiser menu -->
-	<div class="row">
-		<div class="imagecolumnleft">
-			<img src="./images/appetisers.jpeg" alt="Poached salmon" width="100%">
+	<!-- New Menu - Flexbox -->
+	<div class="flexcontainer">
+		<!-- Appetisers -->
+		<div class="flex-left">
+			<img src="./images/appetisers.jpeg" alt="Poached salmon" class="menuimagev1">
 		</div>
-		<div class="textcolumnright">
+		<div class="flex-right">
+			<hr>
 			<h2>APPETISERS</h2>
 			<br>
 			<h3>R&Emacr;WENA BREAD</h3>
@@ -53,20 +59,15 @@
 			<br>
 			<h3>SEAFOOD BASKET</h3>
 			<p>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+			<hr>
 		</div>
-	</div>
-
-	<hr>
-
-	<div class="row">
-		<div class="imagecolumnright">
-			<img src="./images/mains.jpeg" alt="Steamed mussels" width="100%">
-		</div>
-		<div class="textcolumnleft">
+		<!-- Mains -->
+		<div class="flex-left">
+			<hr>
 			<h2>MAINS</h2>
 			<br>
 			<h3>FISH OF THE DAY</h3>
-			<p>Beer-battered fish and kumara fries, served with a side salad and homemade tartare.</p>
+			<p>Beer-battered fish and kumara fries, served with a side salad and homemade tartare</p>
 			<br>
 			<h3>MUSSELS AND SCALLOPS</h3>
 			<p>Steamed mussel & scallop mousse, honey and soy broth.</p>
@@ -82,17 +83,18 @@
 			<br>
 			<h3>VENISON</h3>
 			<p>Venison crusted with horopito, served with glazed plums, cabbage salad and red wine jus.</p>
+			<hr>
 		</div>
-	</div>
-
-	<hr>
-
-	<div class="row">
-		<div class="imagecolumnleft">
-			<img src="./images/deserts.jpeg" alt="Mini pavlova" width="100%">
+		<div class="flex-right">
+			<img src="./images/mains.jpeg" alt="Steamed mussels" class="menuimagev2">
 		</div>
-		<div class="textcolumnright">
-			<h2>DESERTS</h2>
+		<!-- Desserts -->
+		<div class="flex-left">
+			<img src="./images/deserts.jpeg" alt="Mini pavlova" class="menuimagev2">
+		</div>
+		<div class="flex-right">
+			<hr>
+			<h2>DESSERTS</h2>
 			<br>
 			<h3>KAPITI ICE CREAM</h3>
 			<p>Check for daily specials.</p>
@@ -105,16 +107,11 @@
 			<br>
 			<h3>BANOFFEE PIE</h3>
 			<p>Toffee, fresh bananas and fresh cream.</p>
+			<hr>
 		</div>
-	</div>
-
-	<hr>
-
-	<div class="row">
-		<div class="imagecolumnright">
-			<img src="./images/beverages.jpeg" alt="A glass of white wine" width="100%">
-		</div>
-		<div class="textcolumnleft">
+		<!-- Beverages -->
+		<div class="flex-left">
+			<hr>
 			<h2>BEVERAGES</h2>
 			<br>
 			<h3>RED WINE</h3>
@@ -152,31 +149,34 @@
 			<p>Juice</p>
 			<p>Coffee</p>
 			<p>Tea</p>
+			<hr>
+		</div>
+		<div class="flex-right">
+			<img src="./images/beverages.jpeg" alt="A glass of white wine" class="menuimagev1">
 		</div>
 	</div>
 
 	</main>
 
-	
 	<footer>
-		<!-- Main footer -->
-		<div class="footer">
-			<a href="contact.html">Contact Us</a>
-			<!-- These links lead to the under construction page for now -->
-			<a href="underconstruction.html">Gift Vouchers</a>
-			<a href="underconstruction.html">Staff Login</a> 
-		</div>
-		<!-- Social media footer -->
-		<div class="socialfooter">
-			<a href="https://www.facebook.com/ploughandfeather" target="_blank">
-				<img src="./images/gfx-facebook.png" width ="50" height="50" alt="Facebook logo" title="Visit us on Facebook">
-			</a>
-			<a href="https://www.instagram.com/ploughandfeather/" target="_blank">
-				<img src="./images/gfx-instagram.png" width="50" height="50" alt="White Instagram logo" title="Visit us on Instagram">
-			</a>
-			<a href="mailto:amandalouise.stuart@gmail.com">
-				<img src="./images/gfx-mail.png" width="50" height="50" alt="White envelope" title="Email us">
-			</a>
+		<div class="flexfooter">
+			<div class="footerleft">
+				<a href="https://www.facebook.com/ploughandfeather" target="_blank">
+					<img src="./images/gfx-facebook.png" class="socialicon" alt="Facebook logo" title="Visit us on Facebook">
+				</a>
+				<a href="https://www.instagram.com/ploughandfeather/" target="_blank">
+					<img src="./images/gfx-instagram.png" class="socialicon" alt="White Instagram logo" title="Visit us on Instagram">
+				</a>
+				<a href="mailto:amandalouise.stuart@gmail.com">
+					<img src="./images/gfx-mail.png" class="socialicon" alt="White envelope" title="Email us">
+				</a>
+			</div>
+			<div class="footerright">
+				<a href="contact.html">Contact Us</a>
+				<!-- This link leads to the under construction page -->
+				<a href="underconstruction.html">Gift Vouchers</a>
+				<a href="underconstruction.html">Staff Login</a>
+			</div>
 		</div>
 	</footer>
 	

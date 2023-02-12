@@ -16,7 +16,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-/* Styling the header */
+/* Styling the header
 .header {
 	width:100%;
 	height: 180px;
@@ -26,7 +26,6 @@ body {
 	color:#f5ebd8;
 }
 
-/* Styling the logo in the header */
 .header img {
 	float: left;
 	width: 140px;
@@ -34,7 +33,6 @@ body {
 	background: #20392e;
 }
 
-/* Styling the text in the header */
 .header h1 {
 	position: relative;
 	top: 20px;
@@ -42,10 +40,44 @@ body {
 	font-size: 195%;
 	text-align: right;
 }
+*/
+
+/* Flexbox - styling the header */
+.flexheader {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.flexheader img {
+	width: 150px;
+	height: 150px;
+}
+
+.flexheader h1 {
+	font-size: 250%;
+	color: #f5ebd8;
+}
+
+.headerleft {
+	background-color: #20392e;
+	padding: 2%;
+	flex: 20%;
+	text-align: left;
+	align-items: flex-start;
+}
+
+.headerright {
+	background-color: #20392e;
+	padding: 2%;
+	flex: 80%;
+	text-align: right;
+	align-items: flex-end;
+}
 
 /* Styling the navigation bar */
 .navbar {
-	background-color: #48341C;
+	background-color: #20392e;
 	overflow: hidden;
 }
 
@@ -68,9 +100,9 @@ body {
 
 /* Highlighting the active page */
 .navbar a.active {
-	background-color: #20392e;
-	color: #f5ebd8;
-}  
+	background-color: #f5ebd8;
+	color: #20392e;
+}
 
 /* Styling the columns on the homepage */
 .leftcolumn {
@@ -78,7 +110,6 @@ body {
 	width: 50%;
 	text-align: center;
 	padding: 1%;
-
 }
 
 .rightcolumn {
@@ -116,44 +147,31 @@ body {
 	color: black;
 }
 
-/* Styling the Menu page */
-.imagecolumnleft {
-	float: left;
-	width: 50%;
+/* Flexbox - Styling the menu */
+.flexcontainer {
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
-	padding: 1%;
-
 }
 
-.imagecolumnright {
-	float: right;
-	width: 50%;
-	text-align: center;
-	padding: 1%;
-
+.flex-left {
+	background-color: #f5ebd8;
+	padding: 10px;
+	flex: 50%;
 }
 
-.textcolumnleft {
-	float: left;
-	width: 50%;
-	text-align: center;
-	padding: 1%;
-
+.flex-right {
+	background-color: #f5ebd8;
+	padding: 10px;
+	flex: 50%;
 }
 
-.textcolumnright {
-	float: right;
-	width: 50%;
-	text-align: center;
-	padding: 1%;
-
+.menuimagev1 {
+	width: 100%;
 }
 
-/* Clear floats the columns */
-.row::after {
-	content: "";
-	display: table;
-	clear: both;
+.menuimagev2 {
+	width: 100%;
 }
 
 /* Styling the Find Us page */
@@ -209,15 +227,13 @@ hr {
 	margin-bottom: 10%;
 }
 
-/* Styling the main footer */
-.footer {
-	background-color: #20392e;
-	overflow: hidden;
+/* Flexbox - Styling the footer */
+.flexfooter {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.footer a {
-	float: right;
-	display: block;
+.flexfooter a {
 	color: #f5ebd8;
 	text-align: center;
 	padding: 14px 16px;
@@ -225,26 +241,25 @@ hr {
 	font-size: 16px;
 }
 
-.footer a:hover {
-	background-color: #f5ebd8;
-	color: #20392e;
+.footerleft {
+	background-color: #20392e;
+	padding: 2%;
+	flex: 50%;
+	text-align: left;
+	align-items: flex-start;
 }
 
-/* Styling the social media footer */
-.socialfooter {
-	background-color: #48341C;
-	overflow: hidden;
+.footerright {
+	background-color: #20392e;
+	padding: 2%;
+	flex: 50%;
+	text-align: right;
+	align-items: flex-end;
 }
 
-.socialfooter a {
-	text-decoration: none;
-}
-
-.socialfooter img {
-	float: left;
+.socialicon {
 	width: 50px;
 	height: 50px;
-	background: #48341C;
 }
 
 /* Responsive menu for smaller screens */
@@ -253,18 +268,22 @@ hr {
 		width: 100%;
 		float: none;
 	}
-	.socialfooter {
-		width: 100%;
+	.headerleft, .headerright {
+		flex: 100%;
 		text-align: center;
 	}
-	.socialfooter img {
-		float: none;
-		width: 100px;
-		height: 100px;
+	.flex-left, .flex-right {
+		flex: 100%;
 	}
+	.footerleft, .footerright {
+		flex: 100%;
+		text-align: center;
+	}
+	/*
 	.footer, .footer a, .footer a:hover, .footer a:active {
 		width: 100%;
 	}
+	*/
 	.leftcolumn {
 		display: none;
 	}
@@ -277,6 +296,9 @@ hr {
 		display: none;
 	}
 	.imagecolumnright {
+		display: none;
+	}
+	.menuimagev2 {
 		display: none;
 	}
 	.textcolumnleft {

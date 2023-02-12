@@ -17,9 +17,13 @@
 
 <body>
 	
-	<header class="header">
-		<a href="./index.html"><img src="./images/haukailogo.png" alt="The Haukai Logo"></a>
-		<h1>FIND US</h1>
+	<header class="flexheader">
+		<div class="headerleft">
+			<a href="./index.html"><img src="./images/haukailogo.png" alt="The Haukai Logo"></a>
+		</div>
+		<div class="headerright">
+			<h1>FIND US</h1>
+		</div>
 	</header>
 
 	<nav class="navbar"> 
@@ -38,7 +42,7 @@
 		<div class="textcolumnleft">
 			<h3>CONTACT US</h3>
 			<br>
-			<a href="tel:0800222222" class="contact">09 407 8479</a>
+			<a href="tel:0800222222" class="contact"><p>09 407 8479</p></a>
 			<a href="mailto:amandalouise.stuart@gmail.com">
 				<p class="contact">info@thehaukairestaurant.co.nz</p>
 			</a>
@@ -55,24 +59,24 @@
 
 	
 	<footer>
-		<!-- Main footer -->
-		<div class="footer">
-			<a href="contact.html">Contact Us</a>
-			<!-- These links lead to the under construction page for now -->
-			<a href="underconstruction.html">Gift Vouchers</a>
-			<a href="underconstruction.html">Staff Login</a> 
-		</div>
-		<!-- Social media footer -->
-		<div class="socialfooter">
-			<a href="https://www.facebook.com/ploughandfeather" target="_blank">
-				<img src="./images/gfx-facebook.png" width ="50" height="50" alt="Facebook logo" title="Visit us on Facebook">
-			</a>
-			<a href="https://www.instagram.com/ploughandfeather/" target="_blank">
-				<img src="./images/gfx-instagram.png" width="50" height="50" alt="White Instagram logo" title="Visit us on Instagram">
-			</a>
-			<a href="mailto:amandalouise.stuart@gmail.com">
-				<img src="./images/gfx-mail.png" width="50" height="50" alt="White envelope" title="Email us">
-			</a>
+		<div class="flexfooter">
+			<div class="footerleft">
+				<a href="https://www.facebook.com/ploughandfeather" target="_blank">
+					<img src="./images/gfx-facebook.png" class="socialicon" alt="Facebook logo" title="Visit us on Facebook">
+				</a>
+				<a href="https://www.instagram.com/ploughandfeather/" target="_blank">
+					<img src="./images/gfx-instagram.png" class="socialicon" alt="White Instagram logo" title="Visit us on Instagram">
+				</a>
+				<a href="mailto:amandalouise.stuart@gmail.com">
+					<img src="./images/gfx-mail.png" class="socialicon" alt="White envelope" title="Email us">
+				</a>
+			</div>
+			<div class="footerright">
+				<a href="contact.html">Contact Us</a>
+				<!-- This link leads to the under construction page -->
+				<a href="underconstruction.html">Gift Vouchers</a>
+				<a href="underconstruction.html">Staff Login</a>
+			</div>
 		</div>
 	</footer>
 	
